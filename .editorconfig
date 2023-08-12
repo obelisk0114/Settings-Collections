@@ -1,0 +1,62 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# https://spec.editorconfig.org/
+# Files are read top to bottom and the most recent rules found take precedence.
+# If multiple EditorConfig files have matching sections,
+# the rules from the closer EditorConfig file are read last,
+# so pairs in closer files take precedence.
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+[*.{js,jsx,ts,tsx,html,sass,scss,css}]
+indent_style = space
+indent_size = 2
+
+
+# Matches all Java files in this repo
+[*.java]
+indent_style = tab
+indent_size = 4
+
+
+# 4 space indentation
+[*.{ini,py,py.tpl,rst}]
+indent_style = space
+indent_size = 4
+
+
+[*.{sh,bat.tpl,Makefile.tpl}]
+indent_style = tab
+indent_size = 4
+
+
+[*.yml]
+indent_style = space
+indent_size = 2
+
+
+[*.json]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+
+[*.txt]
+indent_style = tab
+indent_size = 4
+
+
+[*.md]
+trim_trailing_whitespace = false
