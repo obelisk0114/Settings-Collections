@@ -1,0 +1,24 @@
+name: Merge block
+
+on:
+  pull_request:
+    types:
+      - opened
+      - labeled
+      - unlabeled
+      - synchronize # If a check is required but that check doesn't get triggered the "expected check" will block forever. 
+      - edited      # https://github.com/orgs/community/discussions/26698
+
+jobs:
+  fail-for-block:
+    name: Block merge if labels contain 'BLOCKED', 'DONOTMERGE', or 'WIP'
+    if: |
+      contains(github.event.pull_request.labels.*.name, 'BLOCKED') ||
+      contains(github.event.pull_request.labels.*.name, 'DONOTMERGE') ||
+      contains(github.event.pull_request.labels.*.name, 'WIP')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail if PR should be blocked or is a draft
+        run: |
+          echo "This PR should be blocked or is a draft."
+          exit 1
