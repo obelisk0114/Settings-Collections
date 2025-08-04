@@ -14,4 +14,5 @@ LaTeX 是一種建立在 TeX 之上的排版工具，由美國電腦科學家 Le
 
 其他內容
 - https://hackmd.io/@CynthiaChuang/Basic-LaTeX-Commands
+- https://class.kh.edu.tw/19061/bulletin/msg_view/592
 - https://github.com/YuRen-tw/latex-notes/blob/master/math/math_symbols.md
