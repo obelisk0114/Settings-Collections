@@ -18,6 +18,12 @@ https://vscodium.com/
 - GitLens
 
 
+## AI tools
+
+- [Cline](https://cline.bot/pricing)
+    - https://www.yourator.co/articles/1069
+
+
 ## JavaScript
 
 ESLint
