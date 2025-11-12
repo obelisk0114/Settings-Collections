@@ -1,0 +1,21 @@
+# Base your .prettierignore on .gitignore and .eslintignore (if you have one).
+
+# outputs
+out
+dist
+
+# external
+node_modules
+
+# test results
+coverage
+
+# resources folders
+src/static/img
+
+# generated
+package-lock.json
+
+# single files
+.github/PULL_REQUEST_TEMPLATE.md
+.editorconfig
